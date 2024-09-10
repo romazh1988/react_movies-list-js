@@ -14,8 +14,8 @@ export const App = () => {
 
   const visibleMovies = moviesFromServer.filter(
     movie =>
-      movie.title.toLocaleLowerCase().includes(query.toLocaleLowerCase()) ||
-      movie.description.toLocaleLowerCase().includes(query.toLocaleLowerCase()),
+      movie.title.toLowerCase().includes(query.toLowerCase()) ||
+      movie.description.toLowerCase().includes(query.toLowerCase()),
   );
 
   return (
